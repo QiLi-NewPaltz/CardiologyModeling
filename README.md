@@ -59,7 +59,10 @@ The summary of features is as follows:
 | Comorbidities	|	Obesity (Yes or No, Number of months of having OB before CAD diagnosis) |
 
 
-### Longitudinal Features
+### Longitudinal Features (LT features)
+
+To capture time-sequential LT features, including lipid profile, HbA1c, and blood pressure, we designed an additional 63 LT features. For every patient record and time-sequential feature, we calculated the minimum, maximum, average, reading-time range, reading-value range, standard deviation of the readings, average reading days, and coefficient of variation for the readings. They are summarized as follows
+
 | Feature |	Description(s) |
 |---------| ---------------|
 | Minimum (MIN)	| Lowest value of all patient recorded values for a feature |
@@ -74,6 +77,25 @@ The summary of features is as follows:
 
 
 ### Machine Learning Models
+
+To predict the likelihood a patient would develop ASCVD, we built automated models for each of the selected four ML methods (logistic regression (LR); naïve Bayes (NB); neural networks (NN); and random forest (RF) (S1 Table). These models were built once using only CS features as predictors and once with a combination of CS and LT features (LTC) as predictors (S2 Table). The overall experiments are listed in follows:
+
+|    | Feature Set* |
+|----|---------------|
+|ML technique |	CS	| LTC |
+|-------------|-----|---------|
+
+Naive Bayes	NB-CS	NB-LTC
+Logistic regression	LR-CS	LR-LTC
+Neural network	NN-CS	NN-LTC
+Random forest	RF-CS	RF-LTC
+
+## Results
+
+![image](https://user-images.githubusercontent.com/98625360/164762487-e60ff440-06a2-4097-a8de-0517657051bf.png)
+
+
+
 
 ## Citation
 

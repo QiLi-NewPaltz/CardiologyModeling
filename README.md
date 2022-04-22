@@ -29,8 +29,8 @@ The 31 CS features included demographics, aggregate risk scores, family history,
 The summary of features is as follows:
 | Feature |	Description(s) |
 |---------| ---------------|
-Demographics	•	Age
-•	Gender
+|Demographics	|	Age |
+|	Gender  |           | 
 •	Age categories: <30, [30,40), [40,50), [50,55), [55,60), [60,65), [65,70), [70,75), [75,80), >=80
 Aggregate risk scores
 	•	ASCVD 10-year risk score (PCE)

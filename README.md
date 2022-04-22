@@ -80,8 +80,9 @@ To capture time-sequential LT features, including lipid profile, HbA1c, and bloo
 
 To predict the likelihood a patient would develop ASCVD, we built automated models for each of the selected four ML methods (logistic regression (LR); naïve Bayes (NB); neural networks (NN); and random forest (RF) (S1 Table). These models were built once using only CS features as predictors and once with a combination of CS and LT features (LTC) as predictors (S2 Table). The overall experiments are listed in follows:
 
-|-------------|-----|---------|
+
 |ML technique |	CS	| LTC |
+|-------------|-----|---------|
 | Naive Bayes	| NB-CS	| NB-LTC |
 | Logistic regression |	LR-CS	 | LR-LTC |
 | Neural network |	NN-CS |	NN-LTC |

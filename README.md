@@ -22,9 +22,47 @@ A total of 289,299 inpatient and outpatient records were screened. Records conta
 ![image](https://user-images.githubusercontent.com/98625360/164759975-55aa53c5-09d7-468a-bd49-c915a174c12c.png)
 Data is extracted from EMRs and filtered. ML models are built on DataMain, compared with each other for performance, and compared against the PCE risk score for the DataPCE subgroup. Abbreviations: ASCVD, atherosclerotic cardiovascular disease; CS, cross-sectional; EMR, electronic medical record; LT, longitudinal; machine-learning models: RF, random forest; LR, logistic regression; NN, neural networks; NB, naïve Bayes.
 
-
-
 ## Model
+
+### Cross-sectional Features (CS features)
+The 31 CS features included demographics, aggregate risk scores, family history, clinical care group, laboratory values, vital signs, and comorbidities.
+The summary of features is as follows:
+| Feature |	Description(s) |
+|---------| ---------------|
+Demographics	•	Age
+•	Gender
+•	Age categories: <30, [30,40), [40,50), [50,55), [55,60), [60,65), [65,70), [70,75), [75,80), >=80
+Aggregate risk scores
+	•	ASCVD 10-year risk score (PCE)
+•	ASCVD 10-year risk score (PCE) categorical, discretized to 3 categories: null value, <5, and ≥5
+•	Numerical score for the family history group of the Dutch Lipid Clinic Network (DLCN)  (0,1)
+•	Hierarchical Condition Category Risk Score (Risk Score)
+•	Numeric score for the LDL-C group of the DLCN (0,1,3,5,8)
+Family history (FHX)	•	Family history of any coronary artery disease (FHX-++)
+•	Family history of premature coronary artery disease (FHX Premature)
+•	Family history of non-premature coronary artery disease (FHX Non-premature)
+Clinical care group	•	Current insurance carrier (Carrier)
+•	Current primary care provider is an employee of the healthcare system where the study is conducted or not (SEP Affiliation)
+•	Have seen endocrinologist in the past or not (Saw Endo)
+•	Patient has account with the MyChart personal health record or not (MyChart)
+Laboratory values	•	Maximum LDL-C (whether EHR-documented or last estimated pretreatment) ≥190 mg/dL at least twice (LDL-C>190 x2)
+•	Maximum LDL-C (whether EHR-documented or last estimated pretreatment) ≥190 mg/dL at least once (LDL-C>190)
+•	The last LDL-C reading before a CAD diagnosis, or the last LDL-C reading in absence of CAD LDL (Num Before CAD Avg) 
+•	The last Non-HDL-C reading before a CAD diagnosis, or the last Non-HDL-C reading in absence of CAD (Non-HDL-C Num Before CAD Avg) 
+•	The last VLDL-C reading before CAD diagnosis, or the last VLDL-C-reading in absence of CAD (VLDL-C-Num-Before-CAD-Avg)
+•	Maximum Lp(a) (MAX LPA)
+•	Maximum Lp(a) group (whether MAX LPA <29 or >50 or null value) (MAX LPA cat)
+Vital signs	•	Last mean arterial blood pressure (MAP) reading before a CAD diagnosis, or the last MAP reading in absence of CAD (MAP BEFORE CAD Avg)
+•	Last systolic arterial blood pressure (SYS) reading before a CAD diagnosis, or the last SYS reading in absence of CAD (SYS BP BEFORE CAD Avg) 
+•	Last diastolic arterial blood pressure (DIA) reading before a CAD diagnosis, or the last DIA reading in absence of CAD (DIA BP BEFORE CAD Avg)
+Comorbidities	•	Diabetes (T1 or T2) (Yes or No, Number of months of having diabetes before being CAD diagnosis)
+•	Hypertension (Yes or No, Number of months of having HTN before CAD diagnosis)
+•	Obesity (Yes or No, Number of months of having OB before CAD diagnosis)
+
+
+### Longitudinal Features
+
+### Machine Learning Models
 
 ## Citation
 

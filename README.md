@@ -60,6 +60,18 @@ The summary of features is as follows:
 
 
 ### Longitudinal Features
+| Feature |	Description(s) |
+|---------| ---------------|
+| Minimum (MIN)	| Lowest value of all patient recorded values for a feature |
+| Maximum (MAX)	| Highest value of all patient recorded values for a feature |
+| Average (MEAN) |	Average value for all recorded values of the feature |
+| Readings number (COUNT)	| Number of recorded readings for each measure |
+| Reading-time range (TRANGE)  |	Time difference, in days, between the first and last recorded values for the feature |
+| Reading-value range (VRANGE) |	Difference between the smallest and largest recorded value for the feature |
+| Standard deviation (STDEV) |	Amount of variation between the recorded values for the feature |
+| Average reading days (Avg-Test-Day) |	Average time, in days, between consecutive recorded values for the feature   |
+| Coefficient of variation (CV) |	Standard measure of dispersion of a probability distribution or frequency distribution |
+
 
 ### Machine Learning Models
 

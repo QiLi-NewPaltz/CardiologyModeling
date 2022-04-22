@@ -90,6 +90,8 @@ To predict the likelihood a patient would develop ASCVD, we built automated mode
 
 ## Results
 
+Area under the curve (AUC) for DataMain. 
+
 ![image](https://user-images.githubusercontent.com/98625360/164762487-e60ff440-06a2-4097-a8de-0517657051bf.png)
 
 
@@ -97,6 +99,5 @@ To predict the likelihood a patient would develop ASCVD, we built automated mode
 
 ## Citation
 
-## Acknowledgement
 
 

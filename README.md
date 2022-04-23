@@ -19,8 +19,7 @@ Data used in this research were anonymized according to US Health Insurance Port
 
 A total of 289,299 inpatient and outpatient records were screened. Records containing pertinent laboratory and vital sign data for the study timeframe were selected to build the ML models (the DataMain group, n = 101,110). Records containing PCE risk scores were assigned to the DataPCE subgroup (n = 54,850). 
 
-![image](https://user-images.githubusercontent.com/98625360/164759975-55aa53c5-09d7-468a-bd49-c915a174c12c.png)
-Data is extracted from EMRs and filtered. ML models are built on DataMain, compared with each other for performance, and compared against the PCE risk score for the DataPCE subgroup. Abbreviations: ASCVD, atherosclerotic cardiovascular disease; CS, cross-sectional; EMR, electronic medical record; LT, longitudinal; machine-learning models: RF, random forest; LR, logistic regression; NN, neural networks; NB, naïve Bayes.
+Data is extracted from EMRs and filtered. ML models are built on DataMain, compared with each other for performance, and compared against the PCE risk score for the DataPCE subgroup. 
 
 ## Model
 
